@@ -37,3 +37,23 @@ let f = 0;
 f = 'teste';
 f = true;
 f = [];
+// union type
+let id = 10;
+id = 'a';
+id = 100;
+const userId = 10;
+const prodId = '10';
+const shitId = 1045;
+// enum
+// tamanho de roupas (size: Médio, size: Pequeno)
+var Size;
+(function (Size) {
+    Size["P"] = "Pequeno";
+    Size["M"] = "M\u00E9dio";
+    Size["G"] = "Grande";
+})(Size || (Size = {}));
+const camisa = {
+    name: 'Camisa gola V',
+    size: Size.G
+};
+console.log(camisa);

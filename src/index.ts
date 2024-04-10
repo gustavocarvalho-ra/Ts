@@ -61,3 +61,34 @@ let f: any = 0
 f = 'teste'
 f = true
 f = []
+
+
+// union type
+let id: string | number = 10
+
+id = 'a'
+id = 100
+
+
+// type alias
+type myIdType = number | string
+
+const userId: myIdType = 10
+const prodId: myIdType = '10'
+const shitId: myIdType = 1045
+
+
+// enum
+// tamanho de roupas (size: Médio, size: Pequeno)
+enum Size {
+  P = 'Pequeno',
+  M = 'Médio',
+  G = 'Grande'
+}
+
+const camisa = {
+  name: 'Camisa gola V',
+  size: Size.G
+}
+
+console.log(camisa)
