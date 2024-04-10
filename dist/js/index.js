@@ -16,3 +16,24 @@ console.log(firstName);
 console.log(typeof firstName);
 firstName = 'Pedro';
 console.log(firstName);
+// object 
+const myNumber = [1, 2, 3];
+console.log(myNumber);
+console.log(myNumber.length);
+myNumber.push(6);
+console.log(myNumber);
+// tuplas
+let myTuple;
+myTuple = [5, 'teste', ['a', 'b']];
+console.log(myTuple);
+// obj literals -> {prop: value}
+const user = {
+    name: 'Pedro', age: 18,
+};
+console.log(user);
+console.log(user.name);
+// any
+let f = 0;
+f = 'teste';
+f = true;
+f = [];
